@@ -9,12 +9,12 @@ CREATE TABLE IF NOT EXISTS shopping_list_table (
                                                  INDEX `item_id_idx` (`item_id` ASC) VISIBLE,
                                                  CONSTRAINT `shopper_id`
                                                      FOREIGN KEY (`shopper_id`)
-                                                         REFERENCES `shopping-list`.`shopper` (`id`)
+                                                         REFERENCES shopper (`id`)
                                                          ON DELETE NO ACTION
                                                          ON UPDATE NO ACTION,
                                                  CONSTRAINT `item_id`
                                                      FOREIGN KEY (`item_id`)
-                                                         REFERENCES `shopping-list`.`items` (`id`)
+                                                         REFERENCES items (`id`)
                                                          ON DELETE NO ACTION
                                                          ON UPDATE NO ACTION);
 -- +goose StatementEnd

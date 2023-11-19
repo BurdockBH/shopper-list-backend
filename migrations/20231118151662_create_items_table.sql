@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS items (
                                          name VARCHAR(45) NULL,
                                          price DOUBLE NULL,
                                          description VARCHAR(45) NULL,
-                                         quantity INT NULL,
+                                         quantity INT NULL
                                          );
 
 -- +goose StatementEnd
