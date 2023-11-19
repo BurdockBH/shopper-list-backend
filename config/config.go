@@ -39,9 +39,6 @@ func LoadConfig() (*Config, error) {
 			DBPort:     os.Getenv("DB_PORT"),
 			DBName:     os.Getenv("DB_NAME"),
 		},
-		JWTConfig: &JWTConfig{
-			JWTSecret: os.Getenv("JWT_SECRET"),
-		},
 	}
 
 	CFG = config
