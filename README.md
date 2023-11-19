@@ -8,7 +8,7 @@ you can run
 
 Running on mySql
 
-.end :
+.env :
 ```
 DB_USERNAME =root
 DB_PASSWORD =root
